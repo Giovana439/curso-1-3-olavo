@@ -18,6 +18,8 @@ const contadores = document.querySelectorAll(".contador");
 
 const tempoObjetivol = new Data("24-10-06T00:00:00");
 
+let tempoAtual = new Date();
+
 contadores[0].textContent = calculaTempo(tempoObjetivo);
 
 function calculaTempo(tempoObjetivo){
