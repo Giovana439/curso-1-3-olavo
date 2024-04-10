@@ -16,7 +16,7 @@ for (let i = 0; i < botoes.length; i++) {// loop que executa enquanto i<quantida
 
 const contadores = document.querySelectorAll(".contador");
 
-const tempoObjetivol = new Data("24-10-05");
+const tempoObjetivol = new Data("24-10-06T00:00:00");
 
 contadores[0].textContent = calculaTempo(tempoObjetivo);
 
@@ -28,9 +28,6 @@ function calculaTempo(tempoObjetivo) {
     let minutos = Math.floor(segundos / 60);
     let horas = Math.floor(minutos / 60);
     let dias = Math.floor(horas / 24)
-    segundos%=60;
-    minutos%=60;
-    horas%=60;
-    return [dias + "dias" - hora + "horas" + minutos + "minutos" + segundos + "segundos"];
+    return dias + "dias" - hora + "horas" + minutos + "minutos" + segundos + "segundos";
 
 }
